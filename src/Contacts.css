@@ -1,0 +1,82 @@
+.hero-section{
+  display: flex;
+  justify-content: center;
+}
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+/* Убираем стандартное оформление ссылки для всей карточки */
+.contact-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Чтобы ссылка занимала всю площадь карточки */
+  transition: transform 0.3s ease;
+}
+
+.contact-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border: 1px solid #eee;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+/* Эффект при наведении на ВСЮ карточку */
+.contact-card-link:hover .contact-card {
+  transform: translateY(-10px);
+  border-color: var(--brand-pink);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  /* Делаем так, чтобы иконка тоже визуально реагировала */
+  transition: transform 0.3s ease;
+}
+
+.contact-card-link:hover .contact-icon {
+  transform: scale(1.2);
+}
+
+.contact-link-text {
+  margin-top: 10px;
+  color: var(--brand-wine);
+  font-weight: 700;
+  border-bottom: 1px dashed var(--brand-wine);
+}
+
+/* Секция вступления в группы */
+.community-join-section {
+  background: rgba(255, 202, 194, 0.15); 
+  padding: 80px 40px;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.community-join-section .section-title {
+  margin-bottom: 40px;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .community-join-section {
+    padding: 60px 20px;
+  }
+}

@@ -1,0 +1,319 @@
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 350px; 
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: var(--brand-pink);
+}
+
+.gallery-media {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-media {
+  transform: scale(1.05);
+}
+
+.events-page {
+  padding-bottom: 100px;
+}
+
+.events-hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to bottom, var(--brand-pink), transparent);
+}
+
+.playfair {
+  font-family: 'Playfair Display', serif;
+  color: var(--brand-wine);
+}
+
+.subtitle{
+    font-size: 20px;
+}
+
+/* Блоки с описанием */
+.description-block {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.description-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.text-side { flex: 1; }
+.image-side { 
+  flex: 1; 
+  height: 450px; 
+  background-color: #eee; 
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 15px 15px 0px var(--brand-pink);
+}
+
+.event-features {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.event-features li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Карточка бронирования */
+.booking-info {
+  background-color: var(--brand-wine);
+  padding: 80px 20px;
+  color: white;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.booking-card h2 { color: var(--brand-pink); }
+
+.book-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 40px;
+  background: white;
+  color: var(--brand-wine);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  transform: scale(1.05);
+  background: var(--brand-pink);
+}
+
+
+/* Секция галереи */
+
+.workshop-grid {
+  column-count: 3; 
+  column-gap: 15px;
+  width: 100%;
+  padding: 20px;
+}
+
+.workshop-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px; 
+  border-radius: 15px;
+  overflow: hidden;
+  break-inside: avoid; 
+}
+
+.gallery-media-fit {
+  width: 100%;
+  height: auto; 
+  display: block;
+  object-fit: contain; 
+}
+.section-title.playfair {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 4vw, 3rem); 
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--brand-wine-dark);
+  text-align: center; 
+  margin-bottom: 50px; 
+  letter-spacing: 2px;
+  width: 100%; 
+}
+
+.workshop-portfolio {
+  padding: 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.section-title.playfair::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: var(--brand-pink);
+  margin: 15px auto 0; 
+  border-radius: 2px;
+}
+
+/* На мобилках  */
+@media (max-width: 600px) {
+  .workshop-grid {
+    column-count: 1;
+  }
+}
+@media (max-width: 768px) {
+  .description-block, .description-block.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .image-side { width: 100%; height: 300px; }
+}
+
+@media (max-width: 768px) {
+  
+  .events-hero {
+    padding: 40px 15px;
+  }
+
+  .events-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  
+  .description-block, 
+  .description-block.reverse {
+    flex-direction: column; 
+    gap: 30px;
+    margin-bottom: 60px;
+    text-align: left; 
+  }
+
+  .image-side {
+    width: 100%;
+    height: 280px; 
+    order: -1; 
+    box-shadow: 10px 10px 0px var(--brand-pink); 
+  }
+
+  .text-side h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+  }
+
+  .event-features li {
+    font-size: 1rem;
+    align-items: flex-start;
+  }
+
+  /* Секция бронирования */
+  .booking-info {
+    padding: 50px 15px;
+    margin-bottom: 60px;
+  }
+
+  .book-btn {
+    width: 100%; 
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+
+  /* ГАЛЕРЕЯ:  */
+  .gallery-grid {
+    
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 180px; 
+    gap: 10px;
+    padding: 0 10px;
+  }
+
+  
+  .gallery-item.wide, 
+  .gallery-item.tall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  
+  .gallery-item:nth-child(1) {
+    grid-column: span 2; 
+    grid-row: span 1;
+  }
+}
+
+/* Для совсем маленьких экранов (iPhone SE и т.д.) */
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr; 
+    grid-auto-rows: 250px;
+  }
+  
+  .gallery-item:nth-child(1) {
+    grid-column: span 1;
+  }
+}
+
+/* Стили для модального окна */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  cursor: zoom-out;
+  padding: 20px;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+  max-width: 90%;
+  max-height: 90vh;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  object-fit: contain; 
+  animation: zoomIn 0.3s ease;
+}
+
+.close-modal {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+
+.gallery-item {
+  cursor: zoom-in;
+}

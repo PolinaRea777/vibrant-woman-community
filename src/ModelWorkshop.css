@@ -1,0 +1,298 @@
+/* --- ОБЩИЕ НАСТРОЙКИ СТРАНИЦЫ --- */
+.workshop-page-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #fff;
+}
+
+/* --- ВЕРХНЯЯ ЧАСТЬ (HEADER) --- */
+.workshop-header-top {
+  text-align: center;
+  padding: 60px 0 40px;
+}
+
+.main-title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 25px;
+  color: var(--brand-wine-dark, #333);
+}
+
+.workshop-main-description {
+  max-width: 850px;
+  margin: 0 auto 40px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #444;
+  font-weight: 300;
+}
+
+/* --- БАННЕР ВРЕМЕНИ (ПРОЗРАЧНЫЙ ГРАДИЕНТ) --- */
+.time-banner {
+  /* Форма и размеры */
+  display: block;
+  max-width: 700px; 
+  margin: 0 auto 50px;
+  padding: 25px 40px;
+  
+  /* Фон и границы */
+  background-color: #FFCDC9;
+  border: 1.5px solid #ecd1e9;
+  border-radius: 20px; 
+  
+  /* Эффект объема */
+  box-shadow: 0 10px 25px rgba(236, 209, 233, 0.3); 
+  
+  text-align: center; 
+  position: relative;
+}
+
+.time-banner p {
+  margin: 8px 0;
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+
+.time-banner strong {
+  color: var(--brand-wine, #722f37); 
+  font-weight: 700;
+}
+
+.italic-text {
+  display: block;
+  font-style: italic;
+  color: #777;
+  margin-top: 5px;
+  font-size: 1rem;
+}
+/* --- ГЛАВНЫЙ СПЛИТ: ФОТО + СПИСОК --- */
+.workshop-main-split {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+  margin-bottom: 100px;
+}
+
+.workshop-image-side {
+  flex: 1.1;
+}
+
+.side-photo {
+  width: 100%;
+  height: auto; 
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+  display: block;
+}
+
+.workshop-features-side {
+  flex: 1;
+  text-align: left;
+}
+
+.side-title {
+  font-size: 2rem;
+  margin-bottom: 35px;
+  color: var(--brand-wine-dark, #333);
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.1rem;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.feature-item span {
+  font-size: 1.4rem;
+}
+
+/* --- СЕКЦИЯ ЦЕН (PRICING) --- */
+.pricing-section {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+}
+
+.price-card {
+  background: white;
+  padding: 45px 30px;
+  border-radius: 30px;
+  border: 1px solid #eee;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.price-card:hover { transform: translateY(-10px); }
+
+.price-card.vip {
+  border: 2px solid #d4af37; /* Gold */
+  box-shadow: 0 20px 40px rgba(212, 175, 55, 0.1);
+}
+
+.vip-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #d4af37;
+  color: white;
+  padding: 6px 20px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+.price-card .price {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: var(--brand-wine, #722f37);
+  margin: 20px 0;
+}
+
+.price-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  margin-top: 30px;
+}
+
+.price-list li {
+  margin-bottom: 14px;
+  padding-left: 25px;
+  position: relative;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.price-list li::before {
+  content: '✦';
+  position: absolute;
+  left: 0;
+  color: #d4af37;
+}
+
+/* --- ГАЛЕРЕЯ--- */
+.workshop-portfolio {
+  padding: 80px 0;
+}
+
+.workshop-grid {
+  column-count: 3;
+  column-gap: 20px;
+  width: 100%;
+}
+
+.workshop-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.workshop-item img {
+  width: 100%;
+  height: auto; 
+  display: block;
+}
+
+.workshop-item:hover {
+  transform: scale(1.02);
+}
+
+/* --- ПОДВАЛ СЕКЦИИ (RESULTS) --- */
+.results-section {
+  background: #fafafa;
+  padding: 60px 30px;
+  border-radius: 30px;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.results-content ul {
+  max-width: 600px;
+  margin: 30px auto 40px;
+  text-align: left;
+  list-style: none;
+}
+
+.results-content li {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+/* --- МОБИЛЬНАЯ АДАПТАЦИЯ (RESPONSIVE) --- */
+@media (max-width: 992px) {
+  .workshop-grid { column-count: 2; }
+  .workshop-main-split { gap: 30px; }
+}
+
+@media (max-width: 768px) {
+  .workshop-main-split {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .workshop-features-side {
+    text-align: center;
+  }
+
+  .feature-item {
+    justify-content: center;
+  }
+
+  .side-photo {
+    border-radius: 15px;
+  }
+
+
+@media (max-width: 600px) {
+  .time-banner {
+    margin: 0 15px 40px; 
+    padding: 20px;
+    border-radius: 15px; 
+  }
+  
+  .time-banner p {
+    font-size: 1rem;
+  }
+}
+  .section-title { font-size: 2rem; }
+}
+
+@media (max-width: 600px) {
+  .workshop-grid { column-count: 1; } /* На телефоне фото на всю ширину */
+  
+  .workshop-page-wrapper {
+    padding: 0 15px;
+  }
+
+  .main-title { font-size: 2.2rem; }
+  
+  .price-card {
+    padding: 35px 20px;
+  }
+}
