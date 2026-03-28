@@ -14,7 +14,7 @@ function Contacts() {
       </section>
 
       <div className="contact-grid">
-  {/* Карточка: WhatsApp — теперь вся карточка кликабельна */}
+  {/* Карточка: WhatsApp */}
   <a href="https://wa.me/17866205862" target="_blank" rel="noreferrer" className="contact-card-link">
     <div className="contact-card">
       <div className="contact-icon">📱</div>
@@ -24,7 +24,7 @@ function Contacts() {
     </div>
   </a>
 
-  {/* Карточка: Email — теперь вся карточка кликабельна */}
+  {/* Карточка: Email  */}
   <a href="mailto:polinakrechina@gmail.com" className="contact-card-link">
     <div className="contact-card">
       <div className="contact-icon">✉️</div>
@@ -34,7 +34,7 @@ function Contacts() {
     </div>
   </a>
 
-  {/* Карточка: Instagram — теперь вся карточка кликабельна */}
+  {/* Карточка: Instagram */}
   <a href="https://www.instagram.com/polinamunteanu94" target="_blank" rel="noreferrer" className="contact-card-link">
     <div className="contact-card">
       <div className="contact-icon">📸</div>

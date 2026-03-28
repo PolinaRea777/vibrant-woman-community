@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
@@ -12,12 +12,12 @@ function Footer() {
           <div className="footer-logo">
             <h2 className="playfair">Beauty Creation LLC</h2>
             <p className="footer-slogan">Empowering Women, Building Connections</p>
-            {/* <p>Miami Community</p> */}
+            
           </div>
           
           <nav className="footer-nav">
             <Link to="/">About <br />Creator</Link>
-            <Link to="Home">Vibrant Women <br />Community</Link>
+            <Link to="/Home">Vibrant Women <br />Community</Link>
             <Link to="/events">Ladies<br /> Events</Link>
             <Link to="/BusinessPR">Business<br /> PR</Link>
             <Link to="/ModelWorkshop">Photo<br /> Projects</Link>

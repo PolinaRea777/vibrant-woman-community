@@ -119,21 +119,27 @@
   column-gap: 15px;
   width: 100%;
   padding: 20px;
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .workshop-item {
   display: inline-block;
   width: 100%;
   margin-bottom: 15px; 
-  border-radius: 15px;
+  border-radius: 25px;
   overflow: hidden;
   break-inside: avoid; 
+  box-sizing: border-box;
+  
 }
 
 .gallery-media-fit {
   width: 100%;
   height: auto; 
   display: block;
+  max-width: 100%;
   object-fit: contain; 
 }
 .section-title.playfair {
@@ -149,7 +155,8 @@
 }
 
 .workshop-portfolio {
-  padding: 80px 40px;
+  padding: 20px;
+  box-sizing: border-box;
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
@@ -169,11 +176,7 @@
 }
 
 /* На мобилках  */
-@media (max-width: 600px) {
-  .workshop-grid {
-    column-count: 1;
-  }
-}
+
 @media (max-width: 768px) {
   .description-block, .description-block.reverse {
     flex-direction: column;
@@ -250,6 +253,29 @@
   .gallery-item:nth-child(1) {
     grid-column: span 2; 
     grid-row: span 1;
+  }
+.workshop-grid {
+    column-count: 1;
+    column-gap: 0;
+  }
+  .workshop-portfolio {
+    padding: 20px 15px !important;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .workshop-item {
+    margin-bottom: 25px;
+    padding: 0 !important; 
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+  }
+
+  /* 4. Картинка на всю ширину */
+  .gallery-media-fit {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
   }
 }
 
