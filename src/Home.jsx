@@ -55,9 +55,9 @@ function Home() {
         <h2 className="section-title">Why Choose Us?</h2>
         <div className="stats-grid">
           <div className="stat-item"><h3>7+</h3><p>years in event organisation industry</p></div>
-          <div className="stat-item"><h3>1000+</h3><p>happy ladies at our events</p></div>
-          <div className="stat-item"><h3>200+</h3><p>found clients and friends</p></div>
-          <div className="stat-item highlight"><h3>#1</h3><p>Largest community in Miami</p></div>
+          <div className="stat-item"><h3>4000+</h3><p>happy ladies at our events</p></div>
+          <div className="stat-item"><h3>1000+</h3><p>found clients and friends</p></div>
+          <div className="stat-item highlight"><h3>#1</h3><p>Largest Slavic Ladies Community in Miami</p></div>
         </div>
         <div className="award-banner">
           <p className='award-banner-par'>🏆 Polina Krechina-Munteanu was awarded as <strong>“The Best Event Creator 2025”</strong></p>
