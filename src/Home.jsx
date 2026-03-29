@@ -30,10 +30,10 @@ function Home() {
   <div className="join-group">
     <h3>Join Women's Community</h3>
     <div className="social-buttons">
-      <a href='https://chat.whatsapp.com/...' target="_blank" rel="noreferrer" className="button-link whatsapp">
+      <a href='https://chat.whatsapp.com/FcGF8jmpE2f3KNTWwiPJs0?mode=hqctcli' target="_blank" rel="noreferrer" className="button-link whatsapp">
         WhatsApp Group
       </a>
-      <a href='https://t.me/...' target="_blank" rel="noreferrer" className="button-link telegram">
+      <a href='https://t.me/+tTAQGIr2NiJmMjUx' target="_blank" rel="noreferrer" className="button-link telegram">
         Telegram Group
       </a>
     </div>
@@ -43,7 +43,7 @@ function Home() {
     <h3>Miami Men’s Group</h3>
     <p className="mens-desc">Events, dinner parties & VIP reservations</p>
     <div className="social-buttons">
-      <a href='https://chat.whatsapp.com/FkvUMdEq4pFGWEuEKdhHO8' target="_blank" rel="noreferrer" className="button-link whatsapp mens-btn">
+      <a href='https://chat.whatsapp.com/FkvUMdEq4pFGWEuEKdhHO8?mode=hq2tcli' target="_blank" rel="noreferrer" className="button-link whatsapp mens-btn">
         Join Men's WhatsApp
       </a>
     </div>
